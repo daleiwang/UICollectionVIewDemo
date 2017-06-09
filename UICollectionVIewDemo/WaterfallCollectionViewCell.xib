@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WaterfallCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="235"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCu-Xr-A0y">
+                        <rect key="frame" x="0.0" y="185" width="318" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="面皮大师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-JR-x98">
+                                <rect key="frame" x="10" y="5" width="58" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥666" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSF-ts-hcv">
+                                <rect key="frame" x="10" y="27" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.png" translatesAutoresizingMaskIntoConstraints="NO" id="znt-1Q-ci8">
+                                <rect key="frame" x="283" y="14" width="25" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="2nj-zM-XLD"/>
+                                    <constraint firstAttribute="width" constant="25" id="ytv-3h-aeq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="znt-1Q-ci8" firstAttribute="centerY" secondItem="wCu-Xr-A0y" secondAttribute="centerY" id="2IR-5i-oor"/>
+                            <constraint firstItem="rSF-ts-hcv" firstAttribute="leading" secondItem="wCu-Xr-A0y" secondAttribute="leading" constant="10" id="4oE-yN-l9b"/>
+                            <constraint firstAttribute="height" constant="50" id="8Oe-WS-Q5a"/>
+                            <constraint firstItem="KaQ-JR-x98" firstAttribute="top" secondItem="wCu-Xr-A0y" secondAttribute="top" constant="5" id="MKD-gH-vRY"/>
+                            <constraint firstItem="KaQ-JR-x98" firstAttribute="leading" secondItem="wCu-Xr-A0y" secondAttribute="leading" constant="10" id="jtS-7t-mwN"/>
+                            <constraint firstItem="rSF-ts-hcv" firstAttribute="top" secondItem="KaQ-JR-x98" secondAttribute="bottom" constant="5" id="lb1-jz-nlW"/>
+                            <constraint firstAttribute="trailing" secondItem="znt-1Q-ci8" secondAttribute="trailing" constant="10" id="szT-Hk-Vbp"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell4.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRW-bk-Apa">
+                        <rect key="frame" x="0.0" y="0.0" width="318" height="185"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eRW-bk-Apa" secondAttribute="trailing" id="5rf-WJ-qby"/>
+                <constraint firstItem="wCu-Xr-A0y" firstAttribute="top" secondItem="eRW-bk-Apa" secondAttribute="bottom" id="EbS-2I-oYY"/>
+                <constraint firstItem="wCu-Xr-A0y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R21-Xu-6uH"/>
+                <constraint firstAttribute="bottom" secondItem="wCu-Xr-A0y" secondAttribute="bottom" id="SbZ-Zy-YEX"/>
+                <constraint firstItem="eRW-bk-Apa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b3a-VV-x2a"/>
+                <constraint firstItem="eRW-bk-Apa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kyI-jN-gfC"/>
+                <constraint firstAttribute="trailing" secondItem="wCu-Xr-A0y" secondAttribute="trailing" id="ws8-5t-dWq"/>
+            </constraints>
+            <size key="customSize" width="318" height="235"/>
+            <connections>
+                <outlet property="image" destination="eRW-bk-Apa" id="pQ2-jl-Z9N"/>
+            </connections>
+            <point key="canvasLocation" x="-236" y="18.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cart.png" width="117" height="107"/>
+        <image name="cell4.png" width="1000" height="664"/>
+    </resources>
+</document>

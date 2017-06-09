@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GuideCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="389"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="225" height="389"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIntro1.png" translatesAutoresizingMaskIntoConstraints="NO" id="oNa-Ky-kUH">
+                        <rect key="frame" x="0.0" y="0.0" width="225" height="389"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUZ-XE-Xv0">
+                        <rect key="frame" x="62" y="314" width="100" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.56453850959999996" blue="0.55494021549999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0ru-lC-LL6"/>
+                            <constraint firstAttribute="height" constant="40" id="eVu-7g-6YQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <state key="normal" title="立即启动">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.56453850962862107" blue="0.55494021546442363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oNa-Ky-kUH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="463-8Q-YSu"/>
+                <constraint firstItem="OUZ-XE-Xv0" firstAttribute="top" secondItem="oNa-Ky-kUH" secondAttribute="bottom" constant="-75" id="7Tg-aQ-NCm"/>
+                <constraint firstItem="oNa-Ky-kUH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8VT-Dt-ygc"/>
+                <constraint firstItem="OUZ-XE-Xv0" firstAttribute="centerX" secondItem="oNa-Ky-kUH" secondAttribute="centerX" id="O7N-ms-Uyi"/>
+                <constraint firstAttribute="trailing" secondItem="oNa-Ky-kUH" secondAttribute="trailing" id="pQe-AD-DtF"/>
+                <constraint firstAttribute="bottom" secondItem="oNa-Ky-kUH" secondAttribute="bottom" id="w6a-PG-TgM"/>
+            </constraints>
+            <size key="customSize" width="225" height="389"/>
+            <connections>
+                <outlet property="buttonStart" destination="OUZ-XE-Xv0" id="Xj7-OQ-Wce"/>
+                <outlet property="iamgeVC" destination="oNa-Ky-kUH" id="ZnD-9z-LEz"/>
+            </connections>
+            <point key="canvasLocation" x="96.5" y="198.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="appIntro1.png" width="750" height="1331"/>
+    </resources>
+</document>
