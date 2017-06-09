@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class GuideCollectionViewCell;
+
+
+@protocol GuideCollectionDelegate <NSObject>
+
+@required
+-(void)start:(GuideCollectionViewCell *)cell;
+
+@end
+
+
 @interface GuideCollectionViewCell : UICollectionViewCell
 
+@property(nonatomic,weak) id<GuideCollectionDelegate> delagate;
 @property(nonatomic,weak)IBOutlet UIImageView *iamgeVC;
 @property(nonatomic,weak)IBOutlet UIButton *buttonStart;
 

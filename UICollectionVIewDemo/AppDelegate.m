@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
+#import "RootTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,15 +21,13 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    RootViewController *tabBar = [RootViewController new];
+    RootTableViewController *rootVC = [RootTableViewController new];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:tabBar];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     
     self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
-    
-    
     
     return YES;
 }

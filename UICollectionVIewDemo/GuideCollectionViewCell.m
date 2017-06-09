@@ -15,4 +15,10 @@
     // Initialization code
 }
 
+-(IBAction)buttonPress:(id)sender{
+    if ([self.delagate respondsToSelector:@selector(start:)]) {
+            [self.delagate start:self];
+    }
+}
+
 @end

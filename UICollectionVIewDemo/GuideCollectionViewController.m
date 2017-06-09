@@ -10,7 +10,7 @@
 #import "GuideCollectionViewCell.h"
 
 
-@interface GuideCollectionViewController ()
+@interface GuideCollectionViewController ()<GuideCollectionDelegate>
 
 @property(nonatomic,strong)NSArray*arrayList;
 
@@ -45,6 +45,11 @@ static NSString * const reuseIdentifier = @"GuideCollectionViewCell";
     self.collectionView.bounces = NO;
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -66,6 +71,7 @@ static NSString * const reuseIdentifier = @"GuideCollectionViewCell";
     GuideCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     //设置Cell显示的图片
     [cell.iamgeVC setImage:[UIImage imageNamed:[self.arrayList objectAtIndex:indexPath.item]]];
+    cell.delagate = self;
     //判断在尾页的时候显示出“启动”Button
     if (indexPath.item == self.arrayList.count - 1) {
         cell.buttonStart.hidden = NO;
@@ -80,6 +86,12 @@ static NSString * const reuseIdentifier = @"GuideCollectionViewCell";
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"------%zd", indexPath.section);
     NSLog(@"------%zd", indexPath.item);
+}
+
+#pragma mark <UICollectionViewDelegate>
+
+-(void)start:(GuideCollectionViewCell *)cell{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

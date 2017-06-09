@@ -32,6 +32,9 @@
                         <state key="normal" title="立即启动">
                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="buttonPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iam-Z7-j3C"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

@@ -46,7 +46,7 @@
 		AD7E89301EE9509F009D675A /* CommonCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E892F1EE9509F009D675A /* CommonCollectionViewController.m */; };
 		AD7E89391EE951A5009D675A /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E89371EE951A5009D675A /* CommonCollectionViewCell.m */; };
 		AD7E893A1EE951A5009D675A /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7E89381EE951A5009D675A /* CommonCollectionViewCell.xib */; };
-		AD7E893D1EE9524C009D675A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E893C1EE9524C009D675A /* RootViewController.m */; };
+		ADB3F2DA1EEA4A7B001D271D /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB3F2D91EEA4A7B001D271D /* RootTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,8 +102,8 @@
 		AD7E89361EE951A5009D675A /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
 		AD7E89371EE951A5009D675A /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		AD7E89381EE951A5009D675A /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
-		AD7E893B1EE9524C009D675A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		AD7E893C1EE9524C009D675A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		ADB3F2D81EEA4A7B001D271D /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		ADB3F2D91EEA4A7B001D271D /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 				AD599C3C1EE930AE00008FE5 /* Custom */,
 				AD599BEF1EE7F15400008FE5 /* AppDelegate.h */,
 				AD599BF01EE7F15400008FE5 /* AppDelegate.m */,
-				AD7E893B1EE9524C009D675A /* RootViewController.h */,
-				AD7E893C1EE9524C009D675A /* RootViewController.m */,
+				ADB3F2D81EEA4A7B001D271D /* RootTableViewController.h */,
+				ADB3F2D91EEA4A7B001D271D /* RootTableViewController.m */,
 				AD599BF81EE7F15400008FE5 /* Assets.xcassets */,
 				AD599BFA1EE7F15400008FE5 /* LaunchScreen.storyboard */,
 				AD599BFD1EE7F15400008FE5 /* Info.plist */,
@@ -341,12 +341,12 @@
 				AD599C331EE92F5800008FE5 /* CustomCollectionViewController.m in Sources */,
 				AD599C191EE8E87200008FE5 /* WaterfallCollectionViewCell.m in Sources */,
 				AD599C1D1EE8E87E00008FE5 /* WaterfallCollectionViewController.m in Sources */,
+				ADB3F2DA1EEA4A7B001D271D /* RootTableViewController.m in Sources */,
 				AD7E89301EE9509F009D675A /* CommonCollectionViewController.m in Sources */,
 				AD599C201EE8EA5100008FE5 /* WaterfallCollectionViewLayout.m in Sources */,
 				AD599C371EE92F7100008FE5 /* CustomCollectionViewCell.m in Sources */,
 				AD7E892D1EE94FC3009D675A /* GuideCollectionViewController.m in Sources */,
 				AD7E89391EE951A5009D675A /* CommonCollectionViewCell.m in Sources */,
-				AD7E893D1EE9524C009D675A /* RootViewController.m in Sources */,
 				AD7E892B1EE94FC3009D675A /* GuideCollectionViewCell.m in Sources */,
 				AD599C3B1EE92F8A00008FE5 /* CustomCollectionViewLayout.m in Sources */,
 			);
